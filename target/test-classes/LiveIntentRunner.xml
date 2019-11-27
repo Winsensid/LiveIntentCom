@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LiveIntent Automation Script " parallel="methods" thread-count="1">
+
+
+    <parameter name="paltform" value="mac"/>
+
+
+
+    <parameter name="url" value=" https://liveintent.com"/>
+    <parameter name="browser" value="chrome"/>
+
+    <test name="LiveIntentHome">
+        <classes>
+            <class name="regression.LiveIntentHomePageTest"/>
+
+        </classes>
+    </test>
+</suite>
